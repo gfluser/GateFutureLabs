@@ -3,15 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNK27VZ5RF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QNK27VZ5RF');
-</script>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -84,24 +75,23 @@
 					<!-- Extra Nav -->
 					<div class="extra-nav">
 						<div class="extra-cell">
-							<a  class="btn btn-outline-light btn-lg text-light" target="_blank"><b>Login</b></a>
-							<a  class="btn btn-primary btn-lg btn-shadow" target="_blank" ><b>Register</b></a>
+							<a class="btn btn-outline-light btn-lg text-light" target="_blank" href="">Login</a>
+							<a class="btn btn-primary btn-lg btn-shadow" target="_blank" href="">Register</a>
 						</div>
 					</div>
+
 
 					<!-- Header Nav -->
 					<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
 						<div class="logo-header">
-							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
-							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
+							<a href="{% url 'index' %}" class="logo-dark"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
 						</div>
 						<ul class="nav navbar-nav navbar navbar-left">
-							<li><a style="color:#3090c7;"  href="{% url 'index' %}"><b>Home</b></a></li>
+							<li><a style="color:#3090c7;" href="{% url 'index' %}"><b>Home</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'about' %}"><b>About Us</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'subscribe' %}"><b>Subscribe</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'blog' %}"><b>Blog</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'join' %}"> <b>Join Our Team</b></a></li>
-							</li>
 							<li><a style="color:#3090c7;" href="{% url 'contact' %}"><b>Contact Us</b></a></li>
 						</ul>
 					</div>
@@ -113,54 +103,63 @@
 	<!-- Header End -->
 
 
-<meta name="viewport" content="width=device-width, initial-scale=3">
-	<style>
-
-.container {
-
-  text-align: center;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.centered {
-  position: absolute;
-  top: 31%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-</style>
-
-  <img src="{% static 'assets/images/ab1111.png' %}" alt="image" class="" style="width:1900px;height:400px;">
-	<div class="centered"><h1 style="font-align=center;color:white;font-size=200%;"><b>ABOUT US</b></h1></div><br>
+  <!-- Banner  -->
+		<div class="dz-bnr-inr dz-bnr-inr-sm text-center position-relative overlay-black-dark" style="background-image:url({% static 'assets/images/banner/bnr2.jpg' %});">
+			<div class="container">
+				<div class="dz-bnr-inr-entry">
+					<h1>About Us</h1>
+					<!-- Breadcrumb Row -->
+					<nav aria-label="breadcrumb" class="breadcrumb-row m-t15">
+						<ul class="breadcrumb">
+							<li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">About Us</li>
+						</ul>
+					</nav>
+					<!-- Breadcrumb Row End -->
+				</div>
+			</div>
+			<svg  class="shape1" viewBox="0 0 282 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M126.783 58.9324C99.4861 4.33881 30.8873 -2.17317 0 1.39504V171.666L282 172C282 125.502 226.135 133.53 196.698 130.185C148.794 128.312 135.034 72.9822 126.783 58.9324Z" fill="var(--primary)"/>
+			</svg>
+			<svg class="shape2" viewBox="0 0 198 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M77.0989 212.77C4.94983 240.593 -3.65619 310.516 1.05944 342L199.558 342L200 -8.74228e-06C138.549 -6.05619e-06 149.16 97.8604 144.739 127.866C142.263 176.694 95.6667 204.359 77.0989 212.77Z" fill="var(--primary)"/>
+			</svg>
+			<svg class="shape3" viewBox="0 0 93 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M31.7243 33.8972C9.47383 37.2 1.30374 12.6752 0 0H93V77.5724C78.8762 75.8341 74.7477 66.7079 71.271 58.0164C67.7944 49.3248 59.5374 29.7687 31.7243 33.8972Z" fill="var(--primary)"/>
+			</svg>
+			<ul class="dz-shape">
+				<li>
+					<svg width="40" height="40" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="40" height="40" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="35" height="35" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+			</ul>
+		</div>
+		<!-- Banner End -->
 
 		<section class="content-inner overflow-hidden position-relative">
 			<div class="container">
 				<div class="section-head text-center">
-					<h3 class="title wow fadeInUp" data-wow-delay="0.6s">Value innovation through blue ocean strategies</h3>
+					<h4 class="title wow fadeInUp" data-wow-delay="0.6s">Value Innovation through Blue Ocean Strategies</h4>&nbsp;
 					<p style="color:black;font-size:100%;margin-left:18%;margin-right:18%;" class="text wow fadeInUp" data-wow-delay="0.8s">GATE FUTURE LABS PVT LTD is a rapidly growing best-in-class Value Innovation company, Incorporated in 2019, headquartered in Bangalore, India and R&D centre in Mumbai and Cochin. We at GATE FUTURE LABS thrive in the age of intelligence with success tri-mantra</p>
 				</div>
 				<br>
@@ -260,7 +259,8 @@
 							</div>
 						</div>
 					</div>
-<br><br><br>
+
+					<br><br><br>
 					<div class="col-lg-8">
 						<div class="row">
 							<div class="col-lg-6 col-md-12 m-b30">
@@ -406,121 +406,114 @@
 					</svg>
 				</li>
 			</ul>
+			</div>
 		</section>
 
 
+
 	<section class="">
-			<footer class="site-footer style-1 position-relative">
-
-		<div class="content-inner-1 bg- position-relative" style="background-image:url('assets/images/banner/bnr1.jpg');">
-			<div class="container">
-				<div class="footer-subscribe-wrapper">
-					<div class="row align-items-center">
-						<div class="col-lg-6">
+		<footer class="site-footer style-1 position-relative">
+			<div class="content-inner-1 bg- position-relative" style="background-image:url('assets/images/banner/bnr1.jpg');">
+				<div class="container">
+					<div class="footer-subscribe-wrapper">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
 							</div>
 						</div>
-			<div class="container">
-				<div class="section-head text-center">
-					<h4 style="color:BLACK;font-size:250%;" data-wow-delay="0.6s"><b>Key Personals</b></h4><br>
-				<div class="row">
+						<div class="container">
+							<div class="section-head text-center">
+								<h4 style="color:BLACK;font-size:250%;" data-wow-delay="0.6s"><b>Key Personals</b></h4><br>
+								<div class="row">
 
-					<div class="row justify-content-center">
-    <div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-        <div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="0.8s">
-            <div class="icon-media">
-                <img src="{% static 'assets/images/roshin.jpeg' %}"><br><br>
-            </div>
-            <div class="icon-content">
-                <h6 STYLE="FONT-SIZE:70%;" class="title"><b>ROSHIN MATHEW</b></h6>
-                <h6 STYLE="FONT-SIZE:90%;" class="title">Founder-CEO</h6>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-        <div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.0s">
-            <div class="icon-media">
-                <img src="{% static 'assets/images/pp1.jpeg' %}"><br><br>
-            </div>
-            <div class="icon-content">
-                <h6 STYLE="FONT-SIZE:70%;" class="title"><b>PP MATHEW</b></h6>
-                <h6 STYLE="FONT-SIZE:90%;" class="title">Director</h6>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-3 m-b30">
-        <div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s">
-            <div class="icon-media">
-                <img src="{% static 'assets/images/ramesh.jpeg' %}"><br><br>
-            </div>
-            <div class="icon-content">
-                <h6 STYLE="FONT-SIZE:70%;" class="title"><b>RAMESH NARAYANAN</b></h6>
-                <h6 STYLE="FONT-SIZE:90%;" class="title">Angel Investor</h6>
-            </div>
-        </div>
-    </div>
-</div>
+									<div class="row justify-content-center">
+										<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+											<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="0.8s">
+												<div class="icon-media">
+													<img src="{% static 'assets/images/roshin.jpeg' %}"><br><br>
+												</div>
+												<div class="icon-content">
+													<h6 STYLE="FONT-SIZE:70%;" class="title"><b>ROSHIN MATHEW</b></h6>
+													<h6 STYLE="FONT-SIZE:90%;" class="title">Founder-CEO</h6>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+											<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.0s">
+												<div class="icon-media">
+													<img src="{% static 'assets/images/pp1.jpeg' %}"><br><br>
+												</div>
+												<div class="icon-content">
+													<h6 STYLE="FONT-SIZE:70%;" class="title"><b>PP MATHEW</b></h6>
+													<h6 STYLE="FONT-SIZE:90%;" class="title">Director</h6>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-3 col-sm-3 m-b30">
+											<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s">
+												<div class="icon-media">
+													<img src="{% static 'assets/images/ramesh.jpeg' %}"><br><br>
+												</div>
+												<div class="icon-content">
+													<h6 STYLE="FONT-SIZE:70%;" class="title"><b>RAMESH NARAYANAN</b></h6>
+													<h6 STYLE="FONT-SIZE:90%;" class="title">Angel Investor</h6>
+												</div>
+											</div>
+										</div>
+									</div>
 
-					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-						<div  class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
-							<div class="icon-media">
-								<img src="{% static 'assets/images/swa.jpeg' %}"><br><br>
-							</div>
-							<div class="icon-content">
-								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>SWAPNIL RAYKAR</b></h6>
-								<h6 STYLE="FONT-SIZE:90%;" class="title">Tech Team</h6>
-							</div>
-						</div>
-					</div>
+									<div class="container">
+										<div class="row justify-content-center">
+											<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+												<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s">
+													<div class="icon-media">
+														<img src="{% static 'assets/images/swa.jpeg' %}" alt="Swapnil Raykar Image"><br><br>
+													</div>
+													<div class="icon-content">
+														<h6 STYLE="FONT-SIZE:70%;" class="title"><b>SWAPNIL RAYKAR</b></h6>
+														<h6 STYLE="FONT-SIZE:90%;" class="title">Tech Team</h6>
+													</div>
+												</div>
+											</div>
 
-						<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.2s" >
-							<div class="icon-media">
-								<img src="{% static 'assets/images/QQ.png' %}"><br><br>
-							</div>
-							<div class="icon-content">
-								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>SURAJ DHIGE</b></h6>
-								<h6 STYLE="FONT-SIZE:90%;" class="title">Tech Team</h6>
+											<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+												<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.2s">
+													<div class="icon-media">
+														<img src="{% static 'assets/images/QQ.png' %}" alt="Suraj Dhige Image"><br><br>
+													</div>
+													<div class="icon-content">
+														<h6 STYLE="FONT-SIZE:70%;" class="title"><b>SURAJ DHIGE</b></h6>
+														<h6 STYLE="FONT-SIZE:90%;" class="title">Tech Team</h6>
+													</div>
+												</div>
+											</div>
 
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
-							<div class="icon-media">
-								<img src="{% static 'assets/images/alet1.jpeg' %}"><br><br>
-							</div>
-							<div class="icon-content">
-								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>ALET JACOB</b></h6>
-								<h6 STYLE="FONT-SIZE:90%;" class="title">Software Developer</h6>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
-							<div class="icon-media">
-								<img src="{% static 'assets/images/prana.jpeg' %}"><br><br>
-							</div>
-							<div class="icon-content">
-								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>PRANAY GAURAV</b></h6>
-								<h6 STYLE="FONT-SIZE:90%;" class="title">Quant  Developer</h6>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
-						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
-							<div class="icon-media">
-								<img src="{% static 'assets/images/WO.jpeg' %}"><br><br>
-							</div>
-							<div class="icon-content">
-								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>MINI VIJESH</b></h6>
-								<h6 STYLE="FONT-SIZE:90%;" class="title">Customer Care</h6>
-							</div>
-						</div>
-					</div>
+											<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+												<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s">
+													<div class="icon-media">
+														<img src="{% static 'assets/images/alet1.jpeg' %}" alt="Alet Jacob Image"><br><br>
+													</div>
+													<div class="icon-content">
+														<h6 STYLE="FONT-SIZE:70%;" class="title"><b>ALET JACOB</b></h6>
+														<h6 STYLE="FONT-SIZE:90%;" class="title">Software Developer</h6>
+													</div>
+												</div>
+											</div>
 
-
-				</div>
-			</div>
+											<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+												<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s">
+													<div class="icon-media">
+														<img src="{% static 'assets/images/WO.jpeg' %}" alt="Mini Vijesh Image"><br><br>
+													</div>
+													<div class="icon-content">
+														<h6 STYLE="FONT-SIZE:70%;" class="title"><b>MINI VIJESH</b></h6>
+														<h6 STYLE="FONT-SIZE:90%;" class="title">Customer Care</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
 
 				<ul class="dz-shape-2">
@@ -568,18 +561,17 @@
 
 
    	<!-- Footer -->
-
-   <footer class="site-footer style-1 position-relative">
-		<div class="footer-top overlay-black-dark-dark" style="background-image:url('assets/images/ft5.png');">
+    <footer class="site-footer style-1 position-relative">
+		<div class="footer-top overlay-black-dark-dark-dark" style="background-image:url({% static 'assets/images/banner/bnr.jpg' %});">
 			<div class="container">
 				<div class="footer-subscribe-wrapper">
 					<div class="row align-items-center">
 						<div class="col-lg-6">
 							<div class="widget wow fadeInUp" data-wow-delay="0.4s">
 								<div class="footer-logo">
-									<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'assets/images/WT1.png' %}" style="text-align:left;margin-right:60%;" alt=""> </a>
+									<a href="index.html" class="logo-light"><img src="{% static 'assets/images/WT1.png' %}" alt=""></a>
 								</div>
-								<p style="text-align:left;margin-left:1%;" > GATE FUTURE LABS PVT LTD is a rapidly growing best-in-class Value Innovation company</p>
+								<p>Gate Future Labs Pvt. Ltd. is a Rapidly Growing Best-in-Class Value Innovation Company.</p>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -643,15 +635,14 @@
 								<li><a href="https://gatefuturelabs.zohorecruit.in/careers">Careers</a></li>
 								<li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
 								<li><a href="{% url 'terms' %}">Terms & Condition</a></li>
-
 							</ul>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-6">
 						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.4s">
 							<h4 class="footer-title"></h4>
-							<a href="http://www.gatetrader.com" ><img class="" src="{% static 'assets/images/trp3.png' %}" style="margin-right:11%;height:75px;align:bottom;"  ></a> <br><br><br><br>
-							<img class="" src="{% static 'assets/images/iso.png' %}" style="margin-right:55%;height:60px;"  >
+							<a href="http://www.gatetrader.com" ><img  class="" src="{% static 'assets/images/trp3.png' %}" style="margin-right:11%;height:75px;" ></a><br><br>
+							<img class="" src="{% static 'assets/images/iso.png' %}" style="margin-left:8%;height:60px;"  >
 						</div>
 					</div>
 				</div>
@@ -662,7 +653,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 col-md-12">
 						<div class="footer-inner text-lg-start text-center ">
-							<p class="copyright-text wow fadeInUp" data-wow-delay="1.6s">Copyright 2023 by <a class="text-primary" href="" target="_blank">GateFutureLabs</a>.com All rights Reserved</p>
+							<p class="copyright-text wow fadeInUp" data-wow-delay="1.6s">Copyright 2024 by <a class="text-primary" href="http://gatefuturelabs.com/" target="_blank">GateFutureLabs</a>. All rights Reserved</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12">
@@ -715,7 +706,6 @@
     <!-- Footer End -->
 
 	<button class="scroltop icon-up" type="button"><i class="fas fa-arrow-up"></i></button>
-
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="{% static 'assets/js/jquery.min.js' %}"></script><!-- JQUERY.MIN JS -->
@@ -730,5 +720,6 @@
 <script src="{% static 'assets/js/custom.js' %}"></script><!-- CUSTOM JS -->
 
 <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq0a2c55ded5a61f3c599bb72a29265b2b44a84239ac339327c2c647f2f92e53a3", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+
 </body>
 </html>

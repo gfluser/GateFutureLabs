@@ -84,24 +84,23 @@
 					<!-- Extra Nav -->
 					<div class="extra-nav">
 						<div class="extra-cell">
-							<a  class="btn btn-outline-light btn-lg text-light" target="_blank" ><b>Login</b></a>
-							<a  class="btn btn-primary btn-lg btn-shadow" target="_blank" ><b>Register</b></a>
+							<a class="btn btn-outline-light btn-lg text-light" target="_blank" href="">Login</a>
+							<a class="btn btn-primary btn-lg btn-shadow" target="_blank" href="">Register</a>
 						</div>
 					</div>
+
 
 					<!-- Header Nav -->
 					<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
 						<div class="logo-header">
-							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
-							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
+							<a href="{% url 'index' %}" class="logo-dark"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
 						</div>
-							<ul class="nav navbar-nav navbar navbar-left">
-							<li><a style="color:#3090c7;"  href="{% url 'index' %}"><b>Home</b></a></li>
+						<ul class="nav navbar-nav navbar navbar-left">
+							<li><a style="color:#3090c7;" href="{% url 'index' %}"><b>Home</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'about' %}"><b>About Us</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'subscribe' %}"><b>Subscribe</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'blog' %}"><b>Blog</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'join' %}"> <b>Join Our Team</b></a></li>
-							</li>
 							<li><a style="color:#3090c7;" href="{% url 'contact' %}"><b>Contact Us</b></a></li>
 						</ul>
 					</div>
@@ -115,7 +114,7 @@
 	<div class="page-content">
 
 		<!-- Banner  -->
-			<div class="dz-bnr-inr dz-bnr-inr-sm text-center position-relative overlay-black-dark" style="background-image:url('assets/images/banner/bnr2.jpg');">
+			<div class="dz-bnr-inr dz-bnr-inr-sm text-center position-relative overlay-black-dark" style="background-image:url({% static 'assets/images/banner/bnr2.jpg' %});">
 				<div class="container">
 					<div class="dz-bnr-inr-entry">
 						<h1>Blog Details</h1>
@@ -509,19 +508,18 @@
 	
 
 
- 	<!-- Footer -->
-
-   <footer class="site-footer style-1 position-relative">
-		<div class="footer-top overlay-black-dark-dark" style="background-image:url('assets/images/ft5.png');">
+	<!-- Footer -->
+    <footer class="site-footer style-1 position-relative">
+		<div class="footer-top overlay-black-dark-dark-dark" style="background-image:url({% static 'assets/images/banner/bnr.jpg' %});">
 			<div class="container">
 				<div class="footer-subscribe-wrapper">
 					<div class="row align-items-center">
 						<div class="col-lg-6">
 							<div class="widget wow fadeInUp" data-wow-delay="0.4s">
 								<div class="footer-logo">
-									<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'assets/images/WT1.png' %}" style="text-align:left;margin-right:60%;" alt=""> </a>
+									<a href="index.html" class="logo-light"><img src="{% static 'assets/images/WT1.png' %}" alt=""></a>
 								</div>
-								<p style="text-align:left;margin-left:1%;" > GATE FUTURE LABS PVT LTD is a rapidly growing best-in-class Value Innovation company</p>
+								<p>Gate Future Labs Pvt. Ltd. is a Rapidly Growing Best-in-Class Value Innovation Company.</p>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -585,15 +583,14 @@
 								<li><a href="https://gatefuturelabs.zohorecruit.in/careers">Careers</a></li>
 								<li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
 								<li><a href="{% url 'terms' %}">Terms & Condition</a></li>
-
 							</ul>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-6">
 						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.4s">
 							<h4 class="footer-title"></h4>
-							<a href="http://www.gatetrader.com" ><img class="" src="{% static 'assets/images/trp3.png' %}" style="margin-right:11%;height:75px;align:bottom;"  ></a> <br><br><br><br>
-							<img class="" src="{% static 'assets/images/iso.png' %}" style="margin-right:55%;height:60px;"  >
+							<a href="http://www.gatetrader.com" ><img  class="" src="{% static 'assets/images/trp3.png' %}" style="margin-right:11%;height:75px;" ></a><br><br>
+							<img class="" src="{% static 'assets/images/iso.png' %}" style="margin-left:8%;height:60px;"  >
 						</div>
 					</div>
 				</div>
@@ -604,7 +601,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 col-md-12">
 						<div class="footer-inner text-lg-start text-center ">
-							<p class="copyright-text wow fadeInUp" data-wow-delay="1.6s">Copyright 2023 by <a class="text-primary" href="" target="_blank">GateFutureLabs</a>.com All rights Reserved</p>
+							<p class="copyright-text wow fadeInUp" data-wow-delay="1.6s">Copyright 2024 by <a class="text-primary" href="http://gatefuturelabs.com/" target="_blank">GateFutureLabs</a>. All rights Reserved</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12">
@@ -612,7 +609,7 @@
 							<ul class="footer-link wow fadeInUp" data-wow-delay="1.8s">
 								<li><a href="{% url 'about' %}">About</a></li>
 								<li><a href="{% url 'contact' %}">Help Desk</a></li>
-								<li><a href="{% url 'privacy' %}>Privacy Policy</a></li>
+								<li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
 							</ul>
 						</div>
 					</div>

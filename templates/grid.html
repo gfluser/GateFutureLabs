@@ -61,7 +61,7 @@
 
 <div class="page-wraper">
 
-	<!-- Header -->
+<!-- Header -->
 	<header class="site-header mo-left header header-transparent">
 		<!-- Main Header -->
 		<div class="sticky-header main-bar-wraper navbar-expand-lg">
@@ -84,24 +84,23 @@
 					<!-- Extra Nav -->
 					<div class="extra-nav">
 						<div class="extra-cell">
-							<a  class="btn btn-outline-light btn-lg text-light" target="_blank" ><b>Login</b></a>
-							<a  class="btn btn-primary btn-lg btn-shadow" target="_blank" ><b>Register</b></a>
+							<a class="btn btn-outline-light btn-lg text-light" target="_blank" href="">Login</a>
+							<a class="btn btn-primary btn-lg btn-shadow" target="_blank" href="">Register</a>
 						</div>
 					</div>
+
 
 					<!-- Header Nav -->
 					<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
 						<div class="logo-header">
-							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
-							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
+							<a href="{% url 'index' %}" class="logo-dark"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
 						</div>
-							<ul class="nav navbar-nav navbar navbar-left">
-							<li><a style="color:#3090c7;"  href="{% url 'index' %}"><b>Home</b></a></li>
+						<ul class="nav navbar-nav navbar navbar-left">
+							<li><a style="color:#3090c7;" href="{% url 'index' %}"><b>Home</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'about' %}"><b>About Us</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'subscribe' %}"><b>Subscribe</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'blog' %}"><b>Blog</b></a></li>
 							<li><a style="color:#3090c7;" href="{% url 'join' %}"> <b>Join Our Team</b></a></li>
-							</li>
 							<li><a style="color:#3090c7;" href="{% url 'contact' %}"><b>Contact Us</b></a></li>
 						</ul>
 					</div>
@@ -112,14 +111,66 @@
 	</header>
 	<!-- Header End -->
 
-<meta name="viewport" content="width=device-width, initial-scale=3">
-<br>
+
+  <!-- Banner  -->
+		<div class="dz-bnr-inr dz-bnr-inr-sm text-center position-relative overlay-black-dark" style="background-image:url({% static 'assets/images/banner/bnr2.jpg' %});">
+			<div class="container">
+				<div class="dz-bnr-inr-entry">
+					<h1>Blog</h1>
+					<!-- Breadcrumb Row -->
+					<nav aria-label="breadcrumb" class="breadcrumb-row m-t15">
+						<ul class="breadcrumb">
+							<li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Blog</li>
+						</ul>
+					</nav>
+					<!-- Breadcrumb Row End -->
+				</div>
+			</div>
+			<svg  class="shape1" viewBox="0 0 282 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M126.783 58.9324C99.4861 4.33881 30.8873 -2.17317 0 1.39504V171.666L282 172C282 125.502 226.135 133.53 196.698 130.185C148.794 128.312 135.034 72.9822 126.783 58.9324Z" fill="var(--primary)"/>
+			</svg>
+			<svg class="shape2" viewBox="0 0 198 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M77.0989 212.77C4.94983 240.593 -3.65619 310.516 1.05944 342L199.558 342L200 -8.74228e-06C138.549 -6.05619e-06 149.16 97.8604 144.739 127.866C142.263 176.694 95.6667 204.359 77.0989 212.77Z" fill="var(--primary)"/>
+			</svg>
+			<svg class="shape3" viewBox="0 0 93 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M31.7243 33.8972C9.47383 37.2 1.30374 12.6752 0 0H93V77.5724C78.8762 75.8341 74.7477 66.7079 71.271 58.0164C67.7944 49.3248 59.5374 29.7687 31.7243 33.8972Z" fill="var(--primary)"/>
+			</svg>
+			<ul class="dz-shape">
+				<li>
+					<svg width="40" height="40" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="40" height="40" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="35" height="35" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+			</ul>
+		</div>
+		<!-- Banner End -->
+
 		<section class="content-inner-1 bg-light-purple position-relative">
 <h1 style="text-align:center;font-size:120%;color:Grey;"><b>AI Powered News Portal Coming Soon!!!</b></h1>
 <br>
 			<div class="section-head  text-center">
 					<h2 class="title wow fadeInUp" data-wow-delay="0.6s">Latest News & Blog</h2>
-					<p class="text wow fadeInUp" data-wow-delay="0.8s">Last Updated: 01 Mar 2024</p>
+					<p class="text wow fadeInUp" data-wow-delay="0.8s">Last Updated: 28 Mar 2024</p>
 				</div>
 		   			<div class="row">
                     <div class="col-xl-4">

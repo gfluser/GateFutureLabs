@@ -50,7 +50,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # This is required for requesting the JWT
+      id-token: write #This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
@@ -61,12 +61,13 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
+      
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3AAF4F2235954B819733B8C2177796BF }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2A12A20E15FF4E1F8057CDD48F19B20A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DC5CA47ED5F446F5B4E43458DB4FF515 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5060620C507041F19083E3C602D7416F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6BDE73F95E3C49C1A6A0611590586501 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D87C6169FA4644CC8FF419F2BDC560ED }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
@@ -74,7 +75,4 @@ jobs:
         with:
           app-name: 'gatefl'
           slot-name: 'Production'
-          package: ${{ github.workspace }}/release.zip
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_SOME_ID }}  # Replace with your actual secret containing the publish profile
-          enable-cms: true  # Example: Enable CMS (Content Management System) if applicable
-          # Add any additional parameters here as needed
+          

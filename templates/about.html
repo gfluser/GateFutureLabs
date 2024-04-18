@@ -1,0 +1,734 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNK27VZ5RF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNK27VZ5RF');
+</script>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="GATE_Future_Labs,Vr_trading,algo_trading_brainwave,vr_reality,value_innovation">
+	<meta name="author" content="">
+	<meta name="robots" content="">
+	<meta name="description" content="GATE Future Labs Website">
+	<meta property="og:title" content="GATE Future Labs Website">
+	<meta property="og:description" content="GATE Future Website">
+	<meta property="og:image" content="https://gate.future.com/xhtml/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+	<title>Gate Future Labs, A Value Innovation Company</title>
+
+	<!-- Favicon icon -->
+    <link rel="icon" type="image/png" href="{% static 'assets/images/favicon8.png' %}">
+
+	<!-- Stylesheet -->
+	<link href="{% static 'assets/vendor/animate/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+	<!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" href="{% static 'assets/css/skin/skin-1.css' %}">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="{% static 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' %}" rel="stylesheet">
+
+</head>
+<body id="bg" data-anm=".anm">
+
+<!--loader start -->
+<div id="loading-area" class="loading-page-1">
+	<div class="loader">
+		<div class="loading-dot"></div>
+	</div>
+</div>
+<!--loader start -->
+
+<div class="page-wraper">
+
+	<!-- Header -->
+	<header class="site-header mo-left header header-transparent">
+		<!-- Main Header -->
+		<div class="sticky-header main-bar-wraper navbar-expand-lg">
+			<div class="main-bar clearfix ">
+				<div class="container clearfix">
+
+					<!-- Website Logo -->
+					<div class="logo-header">
+						<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'assets/images/lg1.png' %}" alt=""></a>
+						<a href="{% url 'index' %}" class="logo-dark"><img src="{% static 'assets/images/lg1.png' %}" alt=""></a>
+					</div>
+
+					<!-- Nav Toggle Button -->
+					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+					<!-- Extra Nav -->
+					<div class="extra-nav">
+						<div class="extra-cell">
+							<a  class="btn btn-outline-light btn-lg text-light" target="_blank"><b>Login</b></a>
+							<a  class="btn btn-primary btn-lg btn-shadow" target="_blank" ><b>Register</b></a>
+						</div>
+					</div>
+
+					<!-- Header Nav -->
+					<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+						<div class="logo-header">
+							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
+							<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'https://gatefuturelabs.com/static/assets/images/lg1.png' %}" alt=""></a>
+						</div>
+						<ul class="nav navbar-nav navbar navbar-left">
+							<li><a style="color:#3090c7;"  href="{% url 'index' %}"><b>Home</b></a></li>
+							<li><a style="color:#3090c7;" href="{% url 'about' %}"><b>About Us</b></a></li>
+							<li><a style="color:#3090c7;" href="{% url 'subscribe' %}"><b>Subscribe</b></a></li>
+							<li><a style="color:#3090c7;" href="{% url 'blog' %}"><b>Blog</b></a></li>
+							<li><a style="color:#3090c7;" href="{% url 'join' %}"> <b>Join Our Team</b></a></li>
+							</li>
+							<li><a style="color:#3090c7;" href="{% url 'contact' %}"><b>Contact Us</b></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Header End -->
+	</header>
+	<!-- Header End -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=3">
+	<style>
+
+.container {
+
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+  <img src="{% static 'assets/images/ab1111.png' %}" alt="image" class="" style="width:1900px;height:400px;">
+	<div class="centered"><h1 style="font-align=center;color:white;font-size=200%;"><b>ABOUT US</b></h1></div><br>
+
+		<section class="content-inner overflow-hidden position-relative">
+			<div class="container">
+				<div class="section-head text-center">
+					<h3 class="title wow fadeInUp" data-wow-delay="0.6s">Value innovation through blue ocean strategies</h3>
+					<p style="color:black;font-size:100%;margin-left:18%;margin-right:18%;" class="text wow fadeInUp" data-wow-delay="0.8s">GATE FUTURE LABS PVT LTD is a rapidly growing best-in-class Value Innovation company, Incorporated in 2019, headquartered in Bangalore, India and R&D centre in Mumbai and Cochin. We at GATE FUTURE LABS thrive in the age of intelligence with success tri-mantra</p>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 m-b30">
+						<div class="icon-bx-wraper style-1 bg-grey box-hover text-center wow bounceInLeft" data-wow-delay="1.0s" >
+							<div class="icon-media">
+								<i class="flaticon-coin-stack"></i>
+							</div>
+							<div class="icon-content">
+								<h4 class="title">Domain Knowledge</h4>
+								<p class="text"></p>
+							</div>
+							<div class="hover-border"></div>
+							<div class="hover-border-2"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 m-b30">
+						<div class="icon-bx-wraper style-1 box-hover bg-grey active text-center wow bounceInUp center" data-wow-delay="1.2s" >
+							<div class="icon-media">
+								<i class="flaticon-transaction"></i>
+							</div>
+							<div class="icon-content">
+								<h4 class="title">Technology Expertise</h4>
+								<p class="text"></p>
+							</div>
+							<div class="hover-border"></div>
+							<div class="hover-border-2"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 m-b30">
+						<div class="icon-bx-wraper style-1 box-hover bg-grey text-center wow bounceInRight" data-wow-delay="1.0s" >
+							<div class="icon-media">
+								<i class="flaticon-shield"></i>
+							</div>
+							<div class="icon-content">
+								<h4 class="title">Value Innovation</h4>
+								<p class="text"></p>
+							</div>
+							<div class="hover-border"></div>
+							<div class="hover-border-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+	</section>
+
+
+
+		<section class="footer-top overlay-black-dark" style="background-image:url({% static 'assets/images/banner/bnr3.jpg' %});">
+			<div class="container">
+				<div class="row">
+					<div class="section-head text-center"><br><br>
+					<h1 style="color:white;"  class="title wow fadeInUp" data-wow-delay="0.6s"><b>Our Philosophy</b></h1>
+					<p class="text wow fadeInUp" data-wow-delay="0.8s"></p>
+				</div>
+
+					<div class="col-lg-4 col-md-12 col-sm-12 m-b30">
+						<div style="width:125%;" class="contant-box style-2  bg-light-purple ">
+							<div class="row">
+                             <img src="{% static 'assets/images/vi1.jpg' %}" alt="image" style="width:700%;height:100%;" class="">
+							</div>
+						</div>
+					</div>
+<br><br><br>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 m-b30">
+								<div style="margin-left:20%;" class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="1.8s">
+									<div class="contant-box">
+										<div class="crypto-info">
+											<div>
+												<h5 style="font-size:100%;color:black;"><b>Elevating Human Creativity Through Blue Ocean Strategy and Value Innovation</b></h5><br>
+                                                   <p style="color:black;text-align:left">At Gate Future Lab,We believe that human creativity is an unparalleled force that has the power to drive innovation, redefine industries, and create unprecedented value. Our philosophy is rooted in the fusion of human ingenuity with two powerful concepts: Blue Ocean Strategy and Value Innovation</p><br><br><br>
+
+
+												<div class="text"></div>
+											</div>
+											<div class="crypto-price">
+												<h6 class="price text-dark"></h6>
+											</div>
+										</div>
+
+
+										<div class="crypto-media">
+											<img src="assets/images/coins/coin13.png" class="wow bounceInRight" data-wow-delay="2.0s" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 m-b30">
+								<div style="margin-right:6%;" class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="2.0s">
+									<div class="contant-box">
+										<div class="crypto-info">
+											<div>
+												<h5 style="font-size:100%;color:black;"><b>Human Creativity,The Heart of Innovation</b></h5><br>
+                                                <p style="color:black;text-align:left">We recognize that human creativity is at the core of every breakthrough, invention, and transformation. It's the spark that ignites change and fuels progress. We are dedicated to harnessing and nurturing this innate creativity in all our endeavors. We empower our team to think beyond boundaries, challenge the status quo, and explore uncharted territories</p><br>
+
+											</div>
+											<div class="crypto-price">
+												<h6 class="price text-dark"></h6>
+											</div>
+										</div>
+										<div class="crypto-media">
+											<img src="assets/images/coins/coin14.png" class="wow bounceInRight" data-wow-delay="2.2s" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<h2 style=font-size:210%;text-align:center;><b></b></h2>
+					<div class="col-lg-4 col-md-12 col-sm-12 m-b30">
+						<div style="width:125%; margin-left:0%;" class="contant-box style-2  bg-light-purple ">
+							<div class="row">
+                             <img src="{% static 'assets/images/abt11.png' %}" style="height:100%;width:195%;" alt="image" class="">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 m-b30">
+								<div style="margin-left:20%;" class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="1.8s">
+									<div class="contant-box">
+										<div class="crypto-info">
+											<div>
+												<h5 style="font-size:100%;color:black;"><b>Blue Ocean Strategy: Beyond Competition</b></h5><br>
+                                                   <p style="color:black;text-align:left">Blue Ocean Strategy is about charting new waters rather than competing in crowded, red ocean markets. We believe that by identifying and creating uncontested market spaces, we can provide our clients with unique and untapped opportunities for growth. Our commitment to Blue Ocean Strategy means that we're not content with incremental improvements; we aspire to redefine industries and set new standards</p>
+
+
+												<div class="text"></div>
+											</div>
+											<div class="crypto-price">
+												<h6 class="price text-dark"></h6>
+											</div>
+										</div>
+
+										<div class="crypto-media">
+											<img src="assets/images/coins/coin13.png" class="wow bounceInRight" data-wow-delay="2.0s" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-5 m-b30">
+								<div style="margin-right:6%;" class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="2.0s">
+									<div class="contant-box">
+										<div class="crypto-info">
+											<div>
+												<h5 style="font-size:100%;color:black;"><b>Value Innovation: Creating Unprecedented Value</b></h5><br>
+                                                <p style="color:black;text-align:left">Value Innovation is at the heart of our approach. We focus on simultaneously reducing costs and increasing value to deliver unparalleled benefits to our clients. By eliminating unnecessary complexities and focusing on what truly matters, we strive to provide solutions that are not only innovative but also economically viable</p><br><br><br><br>
+
+											</div>
+											<div class="crypto-price">
+												<h6 class="price text-dark"></h6>
+											</div>
+										</div>
+										<div class="crypto-media">
+											<img src="assets/images/coins/coin14.png" class="wow bounceInRight" data-wow-delay="2.2s" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+
+
+
+				<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+		</section>
+
+
+	<section class="">
+			<footer class="site-footer style-1 position-relative">
+
+		<div class="content-inner-1 bg- position-relative" style="background-image:url('assets/images/banner/bnr1.jpg');">
+			<div class="container">
+				<div class="footer-subscribe-wrapper">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							</div>
+						</div>
+			<div class="container">
+				<div class="section-head text-center">
+					<h4 style="color:BLACK;font-size:250%;" data-wow-delay="0.6s"><b>Key Personals</b></h4><br>
+				<div class="row">
+
+					<div class="row justify-content-center">
+    <div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+        <div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="0.8s">
+            <div class="icon-media">
+                <img src="{% static 'assets/images/roshin.jpeg' %}"><br><br>
+            </div>
+            <div class="icon-content">
+                <h6 STYLE="FONT-SIZE:70%;" class="title"><b>ROSHIN MATHEW</b></h6>
+                <h6 STYLE="FONT-SIZE:90%;" class="title">Founder-CEO</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+        <div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.0s">
+            <div class="icon-media">
+                <img src="{% static 'assets/images/pp1.jpeg' %}"><br><br>
+            </div>
+            <div class="icon-content">
+                <h6 STYLE="FONT-SIZE:70%;" class="title"><b>PP MATHEW</b></h6>
+                <h6 STYLE="FONT-SIZE:90%;" class="title">Director</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 m-b30">
+        <div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s">
+            <div class="icon-media">
+                <img src="{% static 'assets/images/ramesh.jpeg' %}"><br><br>
+            </div>
+            <div class="icon-content">
+                <h6 STYLE="FONT-SIZE:70%;" class="title"><b>RAMESH NARAYANAN</b></h6>
+                <h6 STYLE="FONT-SIZE:90%;" class="title">Angel Investor</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+						<div  class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/swa.jpeg' %}"><br><br>
+							</div>
+							<div class="icon-content">
+								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>SWAPNIL RAYKAR</b></h6>
+								<h6 STYLE="FONT-SIZE:90%;" class="title">Tech Team</h6>
+							</div>
+						</div>
+					</div>
+
+						<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.2s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/QQ.png' %}"><br><br>
+							</div>
+							<div class="icon-content">
+								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>SURAJ DHIGE</b></h6>
+								<h6 STYLE="FONT-SIZE:90%;" class="title">Tech Team</h6>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/alet1.jpeg' %}"><br><br>
+							</div>
+							<div class="icon-content">
+								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>ALET JACOB</b></h6>
+								<h6 STYLE="FONT-SIZE:90%;" class="title">Software Developer</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/prana.jpeg' %}"><br><br>
+							</div>
+							<div class="icon-content">
+								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>PRANAY GAURAV</b></h6>
+								<h6 STYLE="FONT-SIZE:90%;" class="title">Quant  Developer</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-2 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/WO.jpeg' %}"><br><br>
+							</div>
+							<div class="icon-content">
+								<h6 STYLE="FONT-SIZE:70%;" class="title"><b>MINI VIJESH</b></h6>
+								<h6 STYLE="FONT-SIZE:90%;" class="title">Customer Care</h6>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+				<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+			</div>
+				</div>
+			</div>
+		</div>
+			</footer>
+		</section>
+
+	<br>
+
+
+   	<!-- Footer -->
+
+   <footer class="site-footer style-1 position-relative">
+		<div class="footer-top overlay-black-dark-dark" style="background-image:url('assets/images/ft5.png');">
+			<div class="container">
+				<div class="footer-subscribe-wrapper">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="widget wow fadeInUp" data-wow-delay="0.4s">
+								<div class="footer-logo">
+									<a href="{% url 'index' %}" class="logo-light"><img src="{% static 'assets/images/WT1.png' %}" style="text-align:left;margin-right:60%;" alt=""> </a>
+								</div>
+								<p style="text-align:left;margin-left:1%;" > GATE FUTURE LABS PVT LTD is a rapidly growing best-in-class Value Innovation company</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="widget  wow fadeInUp" data-wow-delay="0.6s">
+								<h4 class="footer-title mb-3 ">Subscribe To Our Newsletter</h4>
+								<form class="dzSubscribe ft-subscribe mb-4" action="assets/script/mailchamp.php" method="post">
+									<div class="dzSubscribeMsg"></div>
+									<div class="input-group mb-0">
+										<input name="dzEmail" required="required" type="email" class="form-control" placeholder="Your Email Address">
+										<button name="submit" value="Submit" type="submit" class="btn btn-primary style-2 text-primary two"><i class="fa-regular fa-paper-plane"></i></button>
+										<button name="submit" value="Submit" type="submit" class="btn btn-primary style-2 text-primary">Subscribe</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row p-50">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="widget wow fadeInUp" data-wow-delay="0.8s">
+							<h4 style="text-align:left;margin-left:15%;"  class="footer-title">Contact</h4>
+							<div class="widget_getintuch">
+								<ul>
+									<li style="text-align:left;" >
+										<i class="fa-solid fa-location-dot"></i>
+										3rd Main HAL 3rd Stage,<br>Old Airport Road Bangalore <br> KA 560017 IN
+
+									</li>
+									<li style="text-align:left;" >
+										<i class="fa-brands fa-whatsapp"></i>
+										+(91) 720 409 1622<br>
+									</li>
+									<li style="text-align:left;">
+										<i class="fa-solid fa-inbox"></i>
+										gatetrader.com<br>
+										gatefuturelabs.com
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.0s">
+							<h4 class="footer-title">Our links</h4>
+							<ul>
+								<li><a href="{% url 'index' %}">Home</a></li>
+								<li><a href="{% url 'about' %}">About Us </a></li>
+								<li><a href="{% url 'subscribe' %}">Subscribe</a></li>
+								<li><a href="{% url 'blog' %}">Blog</a></li>
+								<li><a href="{% url 'join' %}">Join Our Team</a></li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.4s">
+							<h4 class="footer-title">Other links</h4>
+							<ul>
+								<li><a href="{% url 'contact' %}">Contact Us</a></li>
+								<li><a href="https://gatefuturelabs.zohorecruit.in/careers">Careers</a></li>
+								<li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+								<li><a href="{% url 'terms' %}">Terms & Condition</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.4s">
+							<h4 class="footer-title"></h4>
+							<a href="http://www.gatetrader.com" ><img class="" src="{% static 'assets/images/trp3.png' %}" style="margin-right:11%;height:75px;align:bottom;"  ></a> <br><br><br><br>
+							<img class="" src="{% static 'assets/images/iso.png' %}" style="margin-right:55%;height:60px;"  >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom text-md-center text-md-center">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-12">
+						<div class="footer-inner text-lg-start text-center ">
+							<p class="copyright-text wow fadeInUp" data-wow-delay="1.6s">Copyright 2023 by <a class="text-primary" href="" target="_blank">GateFutureLabs</a>.com All rights Reserved</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<div class="footer-inner text-lg-end  text-center">
+							<ul class="footer-link wow fadeInUp" data-wow-delay="1.8s">
+								<li><a href="{% url 'about' %}">About</a></li>
+								<li><a href="{% url 'contact' %}">Help Desk</a></li>
+								<li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="dz-shape-2">
+			<li>
+				<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+					<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+					<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+					<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+				</svg>
+			</li>
+			<li>
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+					<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+				</svg>
+			</li>
+			<li>
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+					<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+				</svg>
+			</li>
+			<li>
+				<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+					<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+					<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+					<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+				</svg>
+			</li>
+		</ul>
+	</footer>
+    <!-- Footer End -->
+
+	<button class="scroltop icon-up" type="button"><i class="fas fa-arrow-up"></i></button>
+
+</div>
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'assets/vendor/wow/wow.js' %}"></script><!-- WOW.JS -->
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script><!-- OWL silder -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script><!-- WOW.JS -->
+<script src="{% static 'assets/vendor/magnific-popup/magnific-popup.js' %}"></script><!-- OWL SLIDER -->
+<script src="{% static 'assets/vendor/counter/waypoints-min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'assets/vendor/counter/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'assets/js/dz.carousel.js' %}"></script><!-- OWL SLIDER -->
+<script src="{% static 'assets/js/dz.ajax.js' %}"></script><!-- AJAX -->
+<script src="{% static 'assets/js/custom.js' %}"></script><!-- CUSTOM JS -->
+
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq0a2c55ded5a61f3c599bb72a29265b2b44a84239ac339327c2c647f2f92e53a3", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+</body>
+</html>
